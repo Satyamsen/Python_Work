@@ -1,0 +1,295 @@
+
+# import math
+# import os
+# import random
+# import re
+# import sys
+
+
+
+
+# n = int(input("Enter the Number :"))
+
+# if n%2==1:
+#     print("Weird")
+# elif 2<=n<=5:
+#     print("Not Weird")
+# elif 6<=n<=20:
+#     print("Weird")
+# else :
+#     print("Not Weird")
+# if __name__ == '__main__':
+#     a = int(input())
+#     b = int(input())
+#     print(a//b)
+#     print(a/b)
+#     #print(a%b)
+# n = int(input())
+# a=[]
+# for i in range (0,n):
+#     print(i**2)
+# def is_leap(year):
+#     leap = False
+#     if 1990<year<1000000:
+#         if  year%4 ==0 and year %400==0 or year%100==0:
+#             return True 
+#     return leap
+
+# year = int(input("enter "))
+# print(is_leap(year))
+
+# [[0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 2], [0, 2, 1], [0, 2, 2], [1, 0, 0], [1, 0, 2], [1, 1, 1], [1, 1, 2], [1, 2, 0], [1, 2, 1], [1, 2, 2], [2, 0, 1], [2, 0, 2], [2, 1, 0], [2, 1, 1], [2, 1, 2], [2, 2, 0], [2, 2, 1], [2, 2, 2]]
+
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+# a=[]
+# for j in range (0,x+1):
+#     for k in range (0,y+1):
+#         for l in range (0,z+1):
+#             if j+k+l != n:
+
+#                 a.append([j,k,l])        
+# print(a)
+
+# a= [[a,b,c][ a for  i in range(0,x+1),] for i in range(3)]
+    
+# print(a)
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+
+# result = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n]
+
+# print(result)
+# if __name__ == '__main__':
+#     n = int(input())
+#     arr = map(int, input().split())
+#     a=[]
+#     b=[]
+#     if 2<=n<=10 or -100<=arr<=100:
+#         for i in arr:
+#             a.append(i)
+#         for j in a:
+#             if j not in b:
+#                 b.append(j)
+#     b.sort()    
+#     print(b[-2])
+
+    # a=[]
+    # for i in arr:
+    #     a.append(i)
+    # b=set(a)
+    # c=list(b)
+    # print(c[-2])
+# n = int(input())
+# arr = list(map(int, input().split()))
+# def average(array):
+# b=set(arr)
+# a=0
+# v=len(b)
+# for i in b:
+#     a+=i
+# c=a/v
+# print(c)
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     arr = list(map(int, input().split()))
+#     result = average(arr)
+#     print(result)
+
+# def satyam(n,m):
+#     a=set(arr)
+#     v=set(vrr)
+#     g=a^v
+#     for i in g:
+#         print(i)
+
+# n=int(input())
+# arr=map(int,input().split())
+# m=int(input())
+# vrr=map(int,input().split())
+
+# print(satyam(arr,vrr))
+# def satyam(arr, vrr):
+#     a = set(arr)
+#     v = set(vrr)
+#     g = a ^ v
+#     for i in g:
+#         print(i)
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# m = int(input())
+# vrr = list(map(int, input().split()))
+
+# satyam(arr, vrr)
+# n=(int(input()))
+# c=0
+# a=[]
+# while c<n:
+#     h=(input())
+#     c+=1
+#     a.append(h)
+# b=set(a)  
+# print(len(b))
+# s=set()
+# for i in range (int(input())):
+#     s.add(input())
+# print(len(s))
+# n = int(input())
+# s = set(map(int, input().split()))
+# for i in range (int(input())):
+#     u=input().split()
+#     a=u[0]
+#     b=u[1:]
+#     if a=='pop':
+#         s.pop()
+#     elif a=='remove':
+#         s.remove(int(b[0]))
+#     elif a== 'discard':
+#         s.discard(int(b[0]))
+# print(sum(s))
+
+# n = int(input())  # Read number of elements in the set
+# s = set(map(int, input().split()))  # Read the set elements
+
+# # Read the number of operations to perform
+# for i in range(int(input())):
+#     u = input().split()
+#     command = u[0]
+#     if command == 'pop':
+#         s.pop()
+#     elif command == 'remove':
+#         s.remove(int(u[1]))
+#     elif command == 'discard':
+#         s.discard(int(u[1]))
+
+# print(sum(s))  # Print the sum of elements in the set
+
+# n=int(input())
+# arr = set(list(map(int, input().split())))
+# v=int(input())
+# vrr=set(list(map(int,input().split())))
+# print(len(arr.union(vrr)))
+# n=int(input())
+# arr = set(list(map(int, input().split())))
+# v=int(input())
+# vrr=set(list(map(int,input().split())))
+# a=print(len(arr.update(vrr)))
+# print(arr.update(vrr))
+# b=print(len(arr.intersection_update(vrr)))
+# print(arr.intersection_update(vrr))
+# c=print(len(arr.difference_update(vrr)))
+# print(arr.difference_update(vrr))
+# d=print(len(arr.symmetric_difference_update(vrr)))
+# print(arr.symmetric_difference_update(vrr))
+# print(a+b+c+d)
+
+# rgagfqgfqrg
+
+
+# happiness =0
+# n=(map(int, input().split()))
+# m=(map(int, input().split()))
+# list=set(list(map(int,input().split())))
+# a=set(list(map(int,input().split())))
+# b=set(list(map(int,input().split())))
+# for i in list :
+#     if a==a.difference(list):
+#         happiness+=1
+#     elif b==b.difference(list):
+#         happiness-=1
+# print(happiness)
+# # c=len(a.difference(list))
+# # d=len(b.difference(list))
+# # Initialize happiness score
+# happiness = 0
+
+# Read inputs
+# happiness=0
+# n = map(int, input().split())
+# m = map(int, input().split())
+# lst = list(map(int, input().split()))   
+# a = set(input())
+# b = set(inp)
+
+
+# for i in lst:
+#     if i in a:
+#         happiness += 1
+#     elif i in b:
+#         happiness -= 1
+
+
+# # print(happiness)
+# n,m=map(int,input().split())
+# lst = list(map(int, input().split()))
+# a = set(input().split())  #mistake 
+# b = set(input().split())  #mistake 
+# print(sum([(i in a)-(i in b) for i in lst]))
+
+# n, m = map(int, input().split())
+# lst = list(map(int, input().split()))
+# a = set(map(int, input().split()))
+# b = set(map(int, input().split()))
+# print(sum([(i in a) - (i in b) for i in lst]))
+
+# n=int(input())
+# s=set(list(map(int,input().split())))
+# k=int(input())
+# def find_captains_room(k, room_list):
+#     room_count = {}
+   
+#     for room in room_list:
+#         if room in room_count:
+#             room_count[room] += 1
+#         else:
+#             room_count[room] = 1
+    
+   
+#     for room, count in room_count.items():
+#         if count == 1:
+#             return room
+
+# k = int(input("Enter the size of each group: "))  
+# room_list = list(map(int, input("Enter the room numbers: ").split()))  
+
+# captains_room = find_captains_room(k, room_list)
+# print(f"The Captain's room number is: {captains_room}")
+
+
+# 1 2 3 6 5 4 4 2 5 3 6 1 6 5 3 2 4 1 2 5 1 4 3 6 8 4 3 1 5 6 2
+# n = int(input())
+# Sn = set(map(int, input().split()))
+# for i in range(int(input())):
+#     cmd = input().split()
+#     if cmd :
+#         arr = set(map(int, input().split()))
+#         if cmd[0] == "intersection_update":
+#             Sn.intersection_update(arr)
+#         elif cmd[0]=="update":
+#             Sn.update(arr)
+#         elif cmd[0] == "symmetric_difference_update":
+#             Sn.symmetric_difference_update(arr)
+#         elif cmd[0] == "difference_update":
+#             Sn.difference_update(arr)
+# print(sum(Sn))
+
+
+# for i in range(int(input())):
+#     a=int(input())
+#     b=set(list(map(int,input().split())))
+#     c=int(input())
+#     d=set(list(map(int,input().split())))
+#     if b.issubset(d):
+#         print("True")
+#     else:
+#         print("False")
+
+
+
+    
